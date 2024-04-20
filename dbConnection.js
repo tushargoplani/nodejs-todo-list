@@ -2,7 +2,7 @@ const { MongoClient } = require("mongodb");
 require("dotenv").config();
 
 exports.connectMongoDB = async () => {
-  const client = new MongoClient(process.env.DB, {
+  const client = new MongoClient(process.env.DB_URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   });

@@ -116,7 +116,7 @@ class UserModule {
       {
         userId: String(user._id),
       },
-      process.env.SECRET,
+      process.env.JWT_SECRET,
       {
         expiresIn: "7d",
       }
